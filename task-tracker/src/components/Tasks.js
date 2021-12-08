@@ -1,12 +1,12 @@
 import Task from "./Task";
 
 const Tasks = (props) => {
-    const { tasks, deleteTask } = props;
+    const { tasks, deleteTask, toggleReminder } = props;
     return (
         <>
             {tasks.map(task => {
                 return (
-                    <Task key={task.id} task={task} deleteTask={deleteTask}/>
+                    <Task key={task.id} task={task} deleteTask={deleteTask} toggleReminder={toggleReminder}/>
                 )
             })}
         </>
