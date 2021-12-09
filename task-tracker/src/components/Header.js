@@ -2,14 +2,12 @@ import PropTypes from 'prop-types';
 import Button from "./Button";
 
 const Header = (props) => {
-    const onClick = () => {
-        console.log('hi!');
-    }
+    const { onAddClick, toggleForm } = props;
 
     return (
         <div className={'header'}>
             <h1>{props.title}</h1>
-            <Button text={'add'} color={'white'} onClick={onClick}/>
+            <Button text={toggleForm ? 'hide form' : 'add'} color={toggleForm ? 'red' : 'white'} onClick={onAddClick}/>
         </div>
     )
 };
