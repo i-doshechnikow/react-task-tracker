@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "text": "Doctors",
+      "day": "6 dec",
+      "reminder": false
+    },
+    {
+      "id": 1,
+      "text": "Chil",
+      "day": "6 dec",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "adf",
+      "day": "tommorow 12 dec",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "вnull",
+      "day": "вnull",
+      "reminder": false
+    }
+  ]
+}
