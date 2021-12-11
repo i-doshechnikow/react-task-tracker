@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import { useState, useEffect } from "react";
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
 
 function App() {
     const [showAddTask, setShowAddTask] = useState(false);
@@ -71,6 +72,7 @@ function App() {
             <Header title={'Tracker'} onAddClick={showForm()} toggleForm={showAddTask}/>
             {tasks.length > 0 ? <Tasks tasks={tasks} deleteTask={deleteTask} toggleReminder={toggleReminder}/> : 'No Tasks'}
             {showAddTask && <AddTask addTask={addTask}/>}
+            <Footer />
         </div>
     )
 }
